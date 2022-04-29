@@ -32,9 +32,21 @@ h2{
         gap: 10px;
         padding: 20px;
     }
+@keyframes foto {
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0.9;
+    }
+}
 .img{
     border: 2px solid rgb(0, 0, 0);
-
+    animation-name: foto;
+    animation-delay: 10s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
 }
 .img:hover{
     transform: scale(1.01);
@@ -153,11 +165,25 @@ header{
 .nav:hover{
     color: rgb(147, 142, 142);
 }
-
+.transition{
+    height: 100px;
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+}
+#t1{
+    transition: all 2s;
+    background-image: url(/img/leon.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#t1:hover{
+    height: 200px;
+}
 /* africa*/
 .img{
     border: 2px solid rgb(0, 0, 0);
-
+    transition: all 2s;
 }
 .img:hover{
     transform: scale(1.01);
@@ -191,6 +217,7 @@ header{
     background-size: cover;
     background-position: center;
     background-image: url(/img/leon2.jpg);
+    transition: all 2s;
 }
 .img77{
     background-size: cover;
