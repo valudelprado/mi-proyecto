@@ -32,14 +32,7 @@ h2{
         gap: 10px;
         padding: 20px;
     }
-@keyframes foto {
-    0%{
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 0.9;
-    }
-}
+
 .img{
     border: 2px solid rgb(0, 0, 0);
     animation-name: foto;
